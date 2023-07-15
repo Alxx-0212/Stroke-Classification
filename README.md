@@ -1,2 +1,2 @@
-# Stroke Classification - Alexander Gosal
+# Laporan Proyek Machine Learning - Alexander Gosal
 ## Domain Proyek
