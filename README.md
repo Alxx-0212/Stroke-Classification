@@ -8,3 +8,7 @@ Namun, perlu diingat bahwa meskipun machine learning dapat memberikan kontribusi
 
 Referensi :
 [Penerapan Metode Adaboost Untuk Mengoptimasi Prediksi Penyakit Stroke Dengan Algoritma Naïve Bayes](http://jurnal.atmaluhur.ac.id/index.php/sisfokom/article/view/1023/685)
+
+## Business Understanding
+ **Problem Statements : **
+Mengembangkan model klasifikasi stroke yang kuat dan akurat menggunakan teknik deep learning pada data medis. Saat ini, pendekatan traditional machine learning telah digunakan untuk klasifikasi stroke, namun menghadapi kendala dalam menangkap pola-pola kompleks dan abstrak yang ada pada data medis. Tujuan utamanya adalah untuk mengeksplorasi penerapan deep learning guna mengatasi keterbatasan ini dan meningkatkan akurasi model klasifikasi stroke.
