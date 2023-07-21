@@ -11,6 +11,7 @@ Referensi :
 
 ## Business Understanding
 #### Problem Statements : 
-1. Mengembangkan model klasifikasi stroke yang kuat dan akurat menggunakan teknik deep learning pada data medis.
+Penerapan machine learning dalam klasifikasi stroke menjanjikan berbagai manfaat yang signifikan. Machine learning dapat membantu dalam deteksi dini potensi stroke dengan mengidentifikasi tanda-tanda awal yang mungkin tidak dapat diidentifikasi dengan metode konvensional. Deteksi dini ini memungkinkan penanganan medis yang lebih cepat dan tepat waktu dan meningkatkan peluang kesembuhan pasien.
 #### Goals :
-1. Mengeksplorasi penerapan deep learning dan meningkatkan akurasi model klasifikasi stroke.
+1. Mengembangkan model klasifikasi stroke yang akurat.
+2. Mengeksplorasi penerapan deep learning dalam meningkatkan akurasi model klasifikasi stroke.
