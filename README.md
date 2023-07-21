@@ -15,3 +15,5 @@ Penerapan machine learning dalam klasifikasi stroke menjanjikan berbagai manfaat
 #### Goals :
 1. Mengembangkan model klasifikasi stroke yang akurat.
 2. Mengeksplorasi penerapan deep learning dalam meningkatkan akurasi model klasifikasi stroke.
+
+## Data Understanding
