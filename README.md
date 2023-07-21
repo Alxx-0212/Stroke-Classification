@@ -11,4 +11,4 @@ Referensi :
 
 ## Business Understanding
 #### Problem Statements : 
-Mengembangkan model klasifikasi stroke yang kuat dan akurat menggunakan teknik deep learning pada data medis. Saat ini, pendekatan traditional machine learning telah digunakan untuk klasifikasi stroke, namun menghadapi kendala dalam menangkap pola-pola kompleks dan abstrak yang ada pada data medis. Tujuan utamanya adalah untuk mengeksplorasi penerapan deep learning guna mengatasi keterbatasan ini dan meningkatkan akurasi model klasifikasi stroke.
+1. Mengembangkan model klasifikasi stroke yang kuat dan akurat menggunakan teknik deep learning pada data medis. Tujuan utamanya adalah untuk mengeksplorasi penerapan deep learning dan meningkatkan akurasi model klasifikasi stroke.
