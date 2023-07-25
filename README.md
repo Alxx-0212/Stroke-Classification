@@ -18,8 +18,9 @@ Berdasarkan pada latar belakang di atas, permasalahan yang dapat diselesaikan pa
 3. Apakah penerapan metode *deep learning* dapat memberikan hasil yang lebih akurat dibandingkan dengan *traditional machine learning* ?
 #### Goals 
 Tujuan proyek ini dibuat adalah sebagai berikut :
-1. Mengembangkan model klasifikasi stroke yang akurat.
-2. Mengeksplorasi penerapan deep learning dalam meningkatkan akurasi model klasifikasi stroke.
+1. Melakukan analisa terhadap data dan mengolah data agar dapat dilakukan proses *training*.
+2. Mengembangkan model klasifikasi stroke yang akurat.
+3. Mengeksplorasi penerapan deep learning dalam meningkatkan akurasi model klasifikasi stroke.
 
 ## Data Understanding
 [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) digunakan untuk memprediksi apakah pasien kemungkinan terkena stroke berdasarkan parameter input seperti jenis kelamin, usia, berbagai penyakit, dan status merokok. Setiap baris dalam data memberikan informasi yang relevan tentang pasien.
