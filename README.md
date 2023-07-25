@@ -49,3 +49,10 @@ Model machine learning dilatih menggunakan framework Tensorflow. Pada prosesnya,
 
 ## Evaluation
 Proses evaluasi dilakukan dengan menggunakan test set dengan metrik *accuracy* dan *loss*. *accuracy* adalah metrik yang paling umum digunakan untuk mengukur performa model pada tugas klasifikasi. Metrik ini mengukur sejauh mana model dapat mengklasifikasikan data dengan benar dari total data yang dievaluasi. Sedangkan *loss* adalah metrik yang digunakan selama proses pelatihan model untuk mengukur seberapa baik model memetakan input ke output yang benar. Tujuan dari pelatihan adalah untuk meminimalkan nilai loss sehingga model dapat belajar dari data dan melakukan prediksi dengan lebih baik. Diperoleh *val_accuracy* sebesar 0.97 dan *val_loss* sebesar 0.13 pada test set. Berdasarkan perolehan tersebut, dapat disimpulkan bahwa model tergeneralisasi dengan baik.
+
+## Referensi
+---
+
+* Agus Byna, Muhammad Basit, "Penerapan Metode Adaboost Untuk Mengoptimasi Prediksi Penyakit Stroke Dengan Algoritma Naïve Bayes", vol 9, No 3 (2020)
+* Kompasiana, "Peran Artificial Intelligence Dalam Membantu Diagnosis Penyakit Stroke", https://www.kompasiana.com/fransisca89474/600f9ccbd541df305e3ca582/peran-artifical-intelligence-dalam-membantu-diagnosis-penyakit-stroke (Diakses pada 25 Juli 2023)
+
