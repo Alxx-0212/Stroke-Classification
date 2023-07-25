@@ -39,6 +39,8 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 12) stroke: 1 if the patient had a stroke or 0 if not
 *Note: "Unknown" in smoking_status means that the information is unavailable for this patient
 
+![dataset](images/dataset.png)
+
 ## Data Preparation
 Pada tahap data preparation, pertama - tama dilakukan *encoding* dengan mengubah semua nilai categorical value menjadi angka. Hal ini dilakukan karena sebagian besar algoritma machine learning dan statistik memerlukan data yang bersifat numerik untuk dapat bekerja dengan baik. Kemudian dilakukan proses normalisasi menggunakan *min max normalization* agar dapat mempercepat proses komputasi. Setelah itu, dataset dibagi menjadi train dan test set.
 
