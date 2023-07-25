@@ -11,9 +11,13 @@ Tujuan dari proyek ini adalah untuk menciptakan model yang akurat dan dapat dian
 Namun, perlu diingat bahwa meskipun *machine learning* dapat memberikan kontribusi yang signifikan dalam bidang medis, hasil dari model ini sebaiknya digunakan hanya sebagai alat bantu dan tidak menggantikan pendapat atau evaluasi dari profesional medis yang berkualifikasi. Kesehatan merupakan hal yang sangat sensitif, sehingga keputusan akhir mengenai diagnosis dan pengobatan harus selalu berdasarkan penilaian dari dokter yang berpengalaman.
 
 ## Business Understanding
-#### Problem Statements : 
-Penerapan machine learning dalam klasifikasi stroke menjanjikan berbagai manfaat yang signifikan. Machine learning dapat membantu dalam deteksi dini potensi stroke dengan mengidentifikasi tanda-tanda awal yang mungkin tidak dapat diidentifikasi dengan metode konvensional. Deteksi dini ini memungkinkan penanganan medis yang lebih cepat dan tepat waktu dan meningkatkan peluang kesembuhan pasien.
-#### Goals :
+#### Problem Statements  
+Berdasarkan pada latar belakang di atas, permasalahan yang dapat diselesaikan pada proyek ini adalah sebagai berikut :
+1. Bagaimana cara menganalisa dataset *stroke prediction* ?
+2. Bagaimana cara mengolah dan memproses data agar dapat digunakan untuk *training* ?
+3. Apakah penerapan metode *deep learning* dapat memberikan hasil yang lebih akurat dibandingkan dengan *traditional machine learning* ?
+#### Goals 
+Tujuan proyek ini dibuat adalah sebagai berikut :
 1. Mengembangkan model klasifikasi stroke yang akurat.
 2. Mengeksplorasi penerapan deep learning dalam meningkatkan akurasi model klasifikasi stroke.
 
