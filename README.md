@@ -55,7 +55,7 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 ## Data Preparation
 1. Encoding: Karena sebagian besar algoritma machine learning dan statistik membutuhkan data dalam bentuk numerik, nilai-nilai categorical value (nilai non-numerik) perlu diubah menjadi angka. Dalam konteks ini, proses encoding dapat berupa penggunaan teknik seperti Label Encoding atau One-Hot Encoding.
 2. Min Max Normalization: Proses normalisasi ini bertujuan untuk membawa semua atribut dalam skala yang seragam, biasanya dalam rentang [0, 1]. Metode Min Max Normalization mengubah nilai setiap atribut dengan formula: <br/>
-${X_normalized = {(X - X_min) \over (X_max - X_min)}}$ <br/>
+${X_{normalized} = {(X - X_{min}) \over (X_{max} - X_{min})}}$ <br/>
 Dimana X adalah nilai asli, X_min adalah nilai minimum dari atribut tersebut, dan X_max adalah nilai maksimum dari atribut tersebut. Normalisasi ini membantu mempercepat proses komputasi dan mencegah atribut dengan skala besar mendominasi perhitungan.
 4. Pembagian Dataset: Dataset kemudian dibagi menjadi dua bagian, yaitu train set dan test set. Train set digunakan untuk melatih model machine learning, sedangkan test set digunakan untuk menguji sejauh mana model yang telah dilatih dapat melakukan prediksi dengan akurasi yang baik.
 
