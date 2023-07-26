@@ -53,15 +53,11 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 | 44679 | Female | 44.0 |       0      |       0       |      Yes     | Govt_job      |      Urban     |       85.28       | 26.2 | Unknown         |    0   |
 
 ## Data Preparation
-Proses data cleaning dan preparation yang dilakukan dapat dijelaskan dalam beberapa poin sebagai berikut:
-#### Data Cleaning:
-1. Pengecekan Missing Values: Dilakukan identifikasi terhadap data yang tidak memiliki nilai (kosong/null) pada setiap atributnya. Missing values ini perlu diperbaiki karena algoritma machine learning umumnya tidak dapat bekerja dengan data yang tidak lengkap.
-2. Pengecekan Outliers: Dilakukan identifikasi terhadap data yang berada di luar kisaran nilai yang wajar (outliers). Outliers dapat mempengaruhi hasil analisis dan model prediksi, sehingga perlu ditangani dengan cara menghapusnya atau mengubahnya menjadi nilai yang wajar. 
-#### Data Preparation:
 1. Encoding: Karena sebagian besar algoritma machine learning dan statistik membutuhkan data dalam bentuk numerik, nilai-nilai categorical value (nilai non-numerik) perlu diubah menjadi angka. Dalam konteks ini, proses encoding dapat berupa penggunaan teknik seperti Label Encoding atau One-Hot Encoding.
-2. Min Max Normalization: Proses normalisasi ini bertujuan untuk membawa semua atribut dalam skala yang seragam, biasanya dalam rentang [0, 1]. Metode Min Max Normalization mengubah nilai setiap atribut dengan formula:
-${X_normalized = {(X - X_min) \over (X_max - X_min)}}$ dimana X adalah nilai asli, X_min adalah nilai minimum dari atribut tersebut, dan X_max adalah nilai maksimum dari atribut tersebut. Normalisasi ini membantu mempercepat proses komputasi dan mencegah atribut dengan skala besar mendominasi perhitungan.
-3. Pembagian Dataset: Dataset kemudian dibagi menjadi dua bagian, yaitu train set dan test set. Train set digunakan untuk melatih model machine learning, sedangkan test set digunakan untuk menguji sejauh mana model yang telah dilatih dapat melakukan prediksi dengan akurasi yang baik.
+2. Min Max Normalization: Proses normalisasi ini bertujuan untuk membawa semua atribut dalam skala yang seragam, biasanya dalam rentang [0, 1]. Metode Min Max Normalization mengubah nilai setiap atribut dengan formula: <\br>
+${X_normalized = {(X - X_min) \over (X_max - X_min)}}$ <\br>
+Dimana X adalah nilai asli, X_min adalah nilai minimum dari atribut tersebut, dan X_max adalah nilai maksimum dari atribut tersebut. Normalisasi ini membantu mempercepat proses komputasi dan mencegah atribut dengan skala besar mendominasi perhitungan.
+4. Pembagian Dataset: Dataset kemudian dibagi menjadi dua bagian, yaitu train set dan test set. Train set digunakan untuk melatih model machine learning, sedangkan test set digunakan untuk menguji sejauh mana model yang telah dilatih dapat melakukan prediksi dengan akurasi yang baik.
 
 Semua langkah ini membantu memastikan bahwa data yang digunakan untuk melatih model adalah data yang berkualitas dan siap digunakan dalam proses machine learning.
 ## Modeling
