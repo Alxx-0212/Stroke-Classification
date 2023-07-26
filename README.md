@@ -53,7 +53,8 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 | 44679 | Female | 44.0 |       0      |       0       |      Yes     | Govt_job      |      Urban     |       85.28       | 26.2 | Unknown         |    0   |
 ### Exploratory Data Analysis
 #### Missing Values
-![missing_values](images/missing_values.png) <br/>
+![missing_values](images/missing_values.png) 
+<br/>
 Terdapat beberapa missing value pada kolom bmi.
 #### Outliers
 ![avg_glucose_outliers](images/outliers_glucose.png) <br/>
