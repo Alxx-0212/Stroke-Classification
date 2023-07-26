@@ -53,8 +53,21 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 | 44679 | Female | 44.0 |       0      |       0       |      Yes     | Govt_job      |      Urban     |       85.28       | 26.2 | Unknown         |    0   |
 ### Exploratory Data Analysis
 #### Missing Values
-![missing_values](images/missing_values.png) 
-<br/>
+| No. |       Column      | Non-Null Count | Dtype   |
+|:---:|:-----------------:|----------------|---------|
+| 1   | id                | 5110 non-null  | int64   |
+| 2   | gender            | 5110 non-null  | object  |
+| 3   | age               | 5110 non-null  | float64 |
+| 4   | hypertension      | 5110 non-null  | int64   |
+| 5   | heart_disease     | 5110 non-null  | int64   |
+| 6   | ever_married      | 5110 non-null  | object  |
+| 7   | work_type         | 5110 non-null  | object  |
+| 8   | Residence_type    | 5110 non-null  | object  |
+| 9   | avg_glucose_level | 5110 non-null  | float64 |
+| 10  | bmi               | 4909 non-null  | float64 |
+| 11  | smoking_status    | 5110 non-null  | object  |
+| 12  | stroke            | 5110 non-null  | int64   |
+
 Terdapat beberapa missing value pada kolom bmi.
 #### Outliers
 ![avg_glucose_outliers](images/outliers_glucose.png) <br/>
