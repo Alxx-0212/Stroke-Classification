@@ -63,7 +63,7 @@ Dimana X adalah nilai asli, $X_{min}$ adalah nilai minimum dari atribut tersebut
 Dataset kemudian dibagi menjadi dua bagian, yaitu train set dan test set dengan rasio (80/20). Train set digunakan untuk melatih model machine learning, sedangkan test set digunakan untuk menguji sejauh mana model yang telah dilatih dapat melakukan prediksi dengan akurasi yang baik. Semua langkah ini membantu memastikan bahwa data yang digunakan untuk melatih model adalah data yang berkualitas dan siap digunakan dalam proses machine learning.
 
 ## Modeling
-Berikut adalah penjelasan tentang setiap parameter machine learning yang digunakan dalam pelatihan model menggunakan framework TensorFlow:
+Model machine learning dilatih menggunakan framework Tensorflow. Pada prosesnya, dibuat model deep learning sederhana menggunakan 3 layer Dense dengan layer pertama terdiri dari 16 neuron dan *input_shape* pada input layer adalah 20, layer kedua terdiri dari 20 neuron dengan aktivasi relu, dan output layer terdapat 1 neuron dengan fungsi aktivasi *sigmoid* untuk memprediksi apakah stroke atau tidak. Model kemudian dicompile menggunakan *SGD optimizer* dengan *learning_rate* 0.1 dan *binary_crossentropy loss function*. Model kemudian dilatih dengan 100 *epochs* dan *batch_size* 32. Berikut adalah penjelasan tentang setiap parameter machine learning yang digunakan dalam pelatihan model menggunakan framework TensorFlow:
 #### Model Deep Learning Sederhana:
 Model yang dibuat merupakan model deep learning sederhana dengan 3 layer Dense.
 * Layer pertama terdiri dari 16 neuron, dan input layer memiliki input_shape sebanyak 20. Input_shape menunjukkan jumlah fitur (atribut) pada data input yang akan digunakan dalam model.
