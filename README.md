@@ -38,7 +38,7 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 11) smoking_status: "sebelumnya merokok", "tidak pernah merokok", "merokok" atau "Tidak diketahui"*
 12) stroke: 1 jika pasien mengalami stroke atau 0 jika tidak
 *Catatan: "Tidak diketahui" dalam status_merokok berarti informasi tidak tersedia untuk pasien ini
-
+#### Contoh Dataset
 | id    | gender | age  | hypertension | heart_disease | ever_married | work_type     | Residence_type | avg_glucose_level | bmi  | smoking_status  | stroke |
 |-------|--------|------|--------------|---------------|--------------|---------------|----------------|-------------------|------|-----------------|--------|
 | 9046  | Male   | 67.0 |       0      |       1       |      Yes     | Private       |      Urban     |       228.69      | 36.6 | formerly smoked |    1   |
