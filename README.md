@@ -112,9 +112,11 @@ Proses evaluasi dilakukan dengan menggunakan test set dengan metrik *accuracy* d
 ![acc](images/training_accuracy.png)<br/>
 ![loss](images/training_loss.png)<br/>
 Dengan menggunakan model deep learning, diperoleh akurasi pada training set sebesar 0.96 dan loss 0.1. 
-
-
-Berdasarkan perolehan tersebut, dapat disimpulkan bahwa model tergeneralisasi dengan baik.
+#### Test Set Evaluation
+| test_accuracy | test_loss |
+|:------------:|:--------:|
+|    0.9717    |  0.1207  |
+Hasil evaluasi model menggunakan test set, diperoleh akurasi sebesar 0.97 dan loss sebesar 0.12. Berdasarkan perolehan tersebut, dapat disimpulkan bahwa model tergeneralisasi dengan baik.
 
 ## Referensi
 * Agus Byna, Muhammad Basit, "Penerapan Metode Adaboost Untuk Mengoptimasi Prediksi Penyakit Stroke Dengan Algoritma Naïve Bayes", vol 9, No 3 (2020)
