@@ -53,22 +53,22 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 | 44679 | Female | 44.0 |       0      |       0       |      Yes     | Govt_job      |      Urban     |       85.28       | 26.2 | Unknown         |    0   |
 ### Exploratory Data Analysis
 #### Missing Values
-![missing_values](images/missing_values.png)
+![missing_values](images/missing_values.png) <br/>
 Terdapat beberapa missing value pada kolom bmi.
 #### Outliers
-![avg_glucose_outliers](images/outliers_glucose.png)
+![avg_glucose_outliers](images/outliers_glucose.png) <br/>
 Terdapat beberapa outlier pada kolom avg_glucose_level.
-![bmi_outliers](images/outliers_bmi.png)
+![bmi_outliers](images/outliers_bmi.png) <br/>
 Terdapat beberapa outlier pada kolom bmi.
 #### Univariate Analysis
-![numerical_distribution](images/numerical_dist.png)
+![numerical_distribution](images/numerical_dist.png) <br/>
 Dapat dilihat berdasarkan grafik, grafik avg_glucose_level memiliki distribusi yang right-skewed dan grafik bmi memiliki distribusi yang cukup normal. Karena distribusi avg_glucose_level right-skewed maka kita dapat menerapkan metode log transformation untuk melakukan standarisasi.
 #### Multivariate Analysis
-![categorical](images/multivariate_gender.png)
-![categorical](images/multivariate_married.png)
-![categorical](images/multivariate_work.png)
-![categorical](images/multi_residence.png)
-![categorical](images/multi_smoking.png)
+![categorical](images/multivariate_gender.png) <br/>
+![categorical](images/multivariate_married.png) <br/>
+![categorical](images/multivariate_work.png) <br/>
+![categorical](images/multi_residence.png) <br/>
+![categorical](images/multi_smoking.png) <br/>
 Berdasarkan grafik categorical plot yang menyatakan probabilitas stroke berdasarkan masing - masing categorical features, dapat disimpulkan :
 1. Berdasarkan gender, kedua gender hampir memiliki probabilitas yang sama dalam klasifikasi stroke.
 2. Berdasarkan ever_married, probabilitas stroke yang sudah menikah lebih besar dibanding yang belum menikah.
@@ -78,7 +78,7 @@ Berdasarkan grafik categorical plot yang menyatakan probabilitas stroke berdasar
 
 Maka, fitur categori memiliki pengaruh rendah terhadap stroke.
 #### Correlation Matrix
-![corr](images/corr.png)
+![corr](images/corr.png) <br/>
 
 ## Data Preparation
 #### Encoding
@@ -108,8 +108,8 @@ Loss function atau fungsi kerugian adalah metrik yang digunakan untuk mengukur s
 
 ## Evaluation
 Proses evaluasi dilakukan dengan menggunakan test set dengan metrik *accuracy* dan *loss*. *accuracy* adalah metrik yang paling umum digunakan untuk mengukur performa model pada tugas klasifikasi. Metrik ini mengukur sejauh mana model dapat mengklasifikasikan data dengan benar dari total data yang dievaluasi. Sedangkan *loss* adalah metrik yang digunakan selama proses pelatihan model untuk mengukur seberapa baik model memetakan input ke output yang benar. Tujuan dari pelatihan adalah untuk meminimalkan nilai loss sehingga model dapat belajar dari data dan melakukan prediksi dengan lebih baik. 
-![acc](images/training_accuracy.png)
-![loss](images/training_loss.png)
+![acc](images/training_accuracy.png)<br/>
+![loss](images/training_loss.png)<br/>
 Dengan menggunakan model deep learning, diperoleh akurasi pada training set sebesar 0.96 dan loss 0.1. 
 
 
