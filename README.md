@@ -66,17 +66,14 @@ Dataset kemudian dibagi menjadi dua bagian, yaitu train set dan test set dengan 
 Model machine learning dilatih menggunakan framework Tensorflow. Pada prosesnya, dibuat model deep learning sederhana menggunakan 3 layer Dense dengan layer pertama terdiri dari 16 neuron dan *input_shape* pada input layer adalah 20, layer kedua terdiri dari 20 neuron dengan aktivasi relu, dan output layer terdapat 1 neuron dengan fungsi aktivasi *sigmoid* untuk memprediksi apakah stroke atau tidak. Model kemudian dicompile menggunakan *SGD optimizer* dengan *learning_rate* 0.1 dan *binary_crossentropy loss function*. Model kemudian dilatih dengan 100 *epochs* dan *batch_size* 32. Berikut adalah penjelasan tentang setiap parameter machine learning yang digunakan dalam pelatihan model menggunakan framework TensorFlow:
 #### Model Deep Learning Sederhana:
 Model yang dibuat merupakan model deep learning sederhana dengan 3 layer Dense.
-* Layer pertama terdiri dari 16 neuron, dan input layer memiliki input_shape sebanyak 20. Input_shape menunjukkan jumlah fitur (atribut) pada data input yang akan digunakan dalam model.
+* Layer pertama terdiri dari 16 neuron, dan input layer memiliki *input_shape* sebanyak 20. *Input_shape* menunjukkan jumlah fitur (atribut) pada data input yang akan digunakan dalam model.
 * Layer kedua terdiri dari 20 neuron dengan aktivasi ReLU. Aktivasi ReLU adalah fungsi aktivasi yang umum digunakan pada hidden layer dalam model deep learning, karena membantu mempercepat konvergensi dan mengatasi masalah vanishing gradient.
 * Output layer terdiri dari 1 neuron, dan menggunakan fungsi aktivasi sigmoid. Fungsi sigmoid digunakan pada tugas klasifikasi biner, seperti prediksi apakah seseorang mengalami stroke atau tidak. Fungsi ini menghasilkan probabilitas kelas positif (1) berdasarkan input yang diberikan.
-
 #### SGD Optimizer:
 SGD (Stochastic Gradient Descent) adalah salah satu optimisasi yang umum digunakan untuk melatih model machine learning. Ini adalah metode optimisasi yang iteratif, di mana pada setiap iterasi, model diperbarui menggunakan subset kecil data (mini-batch) secara stokastik untuk meminimalkan fungsi loss.
 Learning Rate: 0.1 adalah tingkat yang digunakan untuk mengatur seberapa besar langkah perubahan model pada setiap iterasi. Nilai ini mempengaruhi seberapa cepat atau lambat model akan mencapai konvergensi ke minimum global atau lokal dari fungsi loss.
-
 #### Binary Crossentropy Loss Function:
 Loss function atau fungsi kerugian adalah metrik yang digunakan untuk mengukur seberapa baik model memprediksi target yang benar dibandingkan dengan nilai sebenarnya. Pada kasus ini, digunakan binary crossentropy loss function, yang merupakan fungsi kerugian yang umum digunakan untuk tugas klasifikasi biner. Fungsi ini membandingkan prediksi probabilitas (dalam hal ini probabilitas stroke atau tidak) dengan nilai target yang sebenarnya untuk menghasilkan nilai kesalahan (loss) yang akan dioptimalkan selama pelatihan model.
-
 #### Epochs dan Batch Size:
 * Epochs: Jumlah epochs menentukan seberapa banyak iterasi yang dilakukan selama pelatihan model. Pada setiap epoch, seluruh dataset akan diproses oleh model. Pada kasus ini, model dilatih selama 100 epochs.
 * Batch Size: Batch size adalah jumlah sampel data yang digunakan untuk menghitung gradient pada setiap iterasi SGD. Dalam kasus ini, batch size adalah 32, artinya 32 sampel data digunakan dalam setiap iterasi untuk memperbarui parameter model.
