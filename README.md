@@ -25,21 +25,32 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 ## Data Understanding
 [Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) digunakan untuk memprediksi apakah pasien kemungkinan terkena stroke berdasarkan parameter input seperti jenis kelamin, usia, berbagai penyakit, dan status merokok. Setiap baris dalam data memberikan informasi yang relevan tentang pasien.
 #### Variabel-variabel pada Stroke Prediction Dataset adalah sebagai berikut:
-1) id: unique identifier
-2) gender: "Male", "Female" or "Other"
-3) age: age of the patient
-4) hypertension: 0 if the patient doesn't have hypertension, 1 if the patient has hypertension
-5) heart_disease: 0 if the patient doesn't have any heart diseases, 1 if the patient has a heart disease
-6) ever_married: "No" or "Yes"
-7) work_type: "children", "Govt_jov", "Never_worked", "Private" or "Self-employed"
-8) Residence_type: "Rural" or "Urban"
-9) avg_glucose_level: average glucose level in blood
-10) bmi: body mass index
-11) smoking_status: "formerly smoked", "never smoked", "smokes" or "Unknown"*
-12) stroke: 1 if the patient had a stroke or 0 if not
-*Note: "Unknown" in smoking_status means that the information is unavailable for this patient
+1) id: pengenal unik
+2) gender: "Pria", "Wanita" atau "Lainnya"
+3) age: usia pasien
+4) hypertension: 0 jika pasien tidak hipertensi, 1 jika pasien hipertensi
+5) heart_disease: 0 jika pasien tidak memiliki penyakit jantung, 1 jika pasien memiliki penyakit jantung
+6) ever_married: "tidak" atau "ya"
+7) work_type: "anak-anak", "Pemerintahan", "Tidak pernah_bekerja", "Swasta" atau "Wiraswasta"
+8) Residence_type: "Pedesaan" atau "Perkotaan"
+9) avg_glucose_level: kadar glukosa rata-rata dalam darah
+10) bmi: indeks massa tubuh
+11) smoking_status: "sebelumnya merokok", "tidak pernah merokok", "merokok" atau "Tidak diketahui"*
+12) stroke: 1 jika pasien mengalami stroke atau 0 jika tidak
+*Catatan: "Tidak diketahui" dalam status_merokok berarti informasi tidak tersedia untuk pasien ini
 
-![dataset](images/dataset.png)
+| id    | gender | age  | hypertension | heart_disease | ever_married | work_type     | Residence_type | avg_glucose_level | bmi  | smoking_status  | stroke |
+|-------|--------|------|--------------|---------------|--------------|---------------|----------------|-------------------|------|-----------------|--------|
+| 9046  | Male   | 67.0 |       0      |       1       |      Yes     | Private       |      Urban     |       228.69      | 36.6 | formerly smoked |    1   |
+| 51676 | Female | 61.0 |       0      |       0       |      Yes     | Self-employed |      Rural     |       202.21      | NaN  | never smoked    |    1   |
+| 31112 | Male   | 80.0 |       0      |       1       |      Yes     | Private       |      Rural     |       105.92      | 32.5 | never smoked    |    1   |
+| 60182 | Female | 49.0 |       0      |       0       |      Yes     | Private       |      Urban     |       171.23      | 34.4 | smokes          |    1   |
+| 1665  | Female | 79.0 |       1      |       0       |      Yes     | Self-employed |      Rural     |       174.12      | 24.0 | never smoked    |    1   |
+| 18234 | Female | 80.0 |       1      |       0       |      Yes     | Private       |      Urban     |       83.75       | NaN  | never smoked    |    0   |
+| 44873 | Female | 81.0 |       0      |       0       |      Yes     | Self-employed |      Urban     |       125.20      | 40.0 | never smoked    |    0   |
+| 19723 | Female | 35.0 |       0      |       0       |      Yes     | Self-employed |      Rural     |       82.99       | 30.6 | never smoked    |    0   |
+| 37544 | Male   | 51.0 |       0      |       0       |      Yes     | Private       |      Rural     |       166.29      | 25.6 | formerly smoked |    0   |
+| 44679 | Female | 44.0 |       0      |       0       |      Yes     | Govt_job      |      Urban     |       85.28       | 26.2 | Unknown         |    0   |
 
 ## Data Preparation
 Pada tahap data cleaning, dilakukan pengecekan terhadap *missing values* dan *outliers*. Kemudian *missing value* dan *outliers* pada dataset ini didrop. Pada tahap data preparation, pertama - tama dilakukan *encoding* dengan mengubah semua nilai categorical value menjadi angka. Hal ini dilakukan karena sebagian besar algoritma machine learning dan statistik memerlukan data yang bersifat numerik untuk dapat bekerja dengan baik. Kemudian dilakukan proses normalisasi menggunakan *min max normalization* agar dapat mempercepat proses komputasi. Setelah itu, dataset dibagi menjadi train dan test set.
