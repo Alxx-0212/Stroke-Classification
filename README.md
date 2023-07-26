@@ -53,6 +53,7 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 | 44679 | Female | 44.0 |       0      |       0       |      Yes     | Govt_job      |      Urban     |       85.28       | 26.2 | Unknown         |    0   |
 ### Exploratory Data Analysis
 #### Missing Values
+RangeIndex: 5110 entri, 0 hingga 5109
 | No. |       Column      | Non-Null Count | Dtype   |
 |:---:|:-----------------:|----------------|---------|
 | 1   | id                | 5110 non-null  | int64   |
@@ -93,7 +94,7 @@ Berdasarkan grafik categorical plot yang menyatakan probabilitas stroke berdasar
 Maka, fitur categori memiliki pengaruh rendah terhadap stroke.
 #### Correlation Matrix
 ![corr](images/corr.png) <br/>
-
+Berdasarkan matriks korelasi, dapat dilihat fitur age, hypertension, heart_disease, avg_glucose_level, dan bmi memiliki korelasi yang relatif kecil terhadap fitur stroke. Dengan fitur age yang memiliki korelasi tertinggi terhadap stroke dibandingkan dengan fitur lainnya.
 ## Data Preparation
 #### Encoding
 Karena sebagian besar algoritma machine learning dan statistik membutuhkan data dalam bentuk numerik, nilai-nilai categorical value (nilai non-numerik) perlu diubah menjadi angka. Dalam konteks ini, proses encoding dapat berupa penggunaan teknik seperti Label Encoding atau One-Hot Encoding.
