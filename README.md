@@ -51,6 +51,34 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 | 19723 | Female | 35.0 |       0      |       0       |      Yes     | Self-employed |      Rural     |       82.99       | 30.6 | never smoked    |    0   |
 | 37544 | Male   | 51.0 |       0      |       0       |      Yes     | Private       |      Rural     |       166.29      | 25.6 | formerly smoked |    0   |
 | 44679 | Female | 44.0 |       0      |       0       |      Yes     | Govt_job      |      Urban     |       85.28       | 26.2 | Unknown         |    0   |
+### Exploratory Data Analysis
+#### Missing Values
+![missing_values](images/missing_values.png)
+Terdapat beberapa missing value pada kolom bmi.
+#### Outliers
+![avg_glucose_outliers](images/outliers_glucose.png)
+Terdapat beberapa outlier pada kolom avg_glucose_level.
+![bmi_outliers](images/outliers_bmi.png)
+Terdapat beberapa outlier pada kolom bmi.
+#### Univariate Analysis
+![numerical_distribution](images/numerical_dist.png)
+Dapat dilihat berdasarkan grafik, grafik avg_glucose_level memiliki distribusi yang right-skewed dan grafik bmi memiliki distribusi yang cukup normal. Karena distribusi avg_glucose_level right-skewed maka kita dapat menerapkan metode log transformation untuk melakukan standarisasi.
+#### Multivariate Analysis
+![categorical](images/multivariate_gender.png)
+![categorical](images/multivariate_married.png)
+![categorical](images/multivariate_work.png)
+![categorical](images/multi_residence.png)
+![categorical](images/multi_smoking.png)
+Berdasarkan grafik categorical plot yang menyatakan probabilitas stroke berdasarkan masing - masing categorical features, dapat disimpulkan :
+1. Berdasarkan gender, kedua gender hampir memiliki probabilitas yang sama dalam klasifikasi stroke.
+2. Berdasarkan ever_married, probabilitas stroke yang sudah menikah lebih besar dibanding yang belum menikah.
+3. Berdasarkan work_type, probabilitas stroke berdasarkan work_type cukup bervariasi dengan probabilitas tertinggi adalah Self-employed.
+4. Berdasarkan Residence_type, kedua tipe hampir memiliki probabilitas yang sama.
+5. Berdasarkan smoking_status, probabilitas stroke berdasarkan smoking_status cukup bervariasi dengan probabilitas tertinggi adalah formerly smoked.
+
+Maka, fitur categori memiliki pengaruh rendah terhadap stroke.
+#### Correlation Matrix
+![corr](images/corr.png)
 
 ## Data Preparation
 #### Encoding
@@ -79,7 +107,13 @@ Loss function atau fungsi kerugian adalah metrik yang digunakan untuk mengukur s
 * Batch Size: Batch size adalah jumlah sampel data yang digunakan untuk menghitung gradien pada setiap iterasi SGD. Dalam kasus ini, batch size adalah 32, artinya 32 sampel data digunakan dalam setiap iterasi untuk memperbarui parameter model.
 
 ## Evaluation
-Proses evaluasi dilakukan dengan menggunakan test set dengan metrik *accuracy* dan *loss*. *accuracy* adalah metrik yang paling umum digunakan untuk mengukur performa model pada tugas klasifikasi. Metrik ini mengukur sejauh mana model dapat mengklasifikasikan data dengan benar dari total data yang dievaluasi. Sedangkan *loss* adalah metrik yang digunakan selama proses pelatihan model untuk mengukur seberapa baik model memetakan input ke output yang benar. Tujuan dari pelatihan adalah untuk meminimalkan nilai loss sehingga model dapat belajar dari data dan melakukan prediksi dengan lebih baik. Diperoleh *val_accuracy* sebesar 0.97 dan *val_loss* sebesar 0.13 pada test set. Berdasarkan perolehan tersebut, dapat disimpulkan bahwa model tergeneralisasi dengan baik.
+Proses evaluasi dilakukan dengan menggunakan test set dengan metrik *accuracy* dan *loss*. *accuracy* adalah metrik yang paling umum digunakan untuk mengukur performa model pada tugas klasifikasi. Metrik ini mengukur sejauh mana model dapat mengklasifikasikan data dengan benar dari total data yang dievaluasi. Sedangkan *loss* adalah metrik yang digunakan selama proses pelatihan model untuk mengukur seberapa baik model memetakan input ke output yang benar. Tujuan dari pelatihan adalah untuk meminimalkan nilai loss sehingga model dapat belajar dari data dan melakukan prediksi dengan lebih baik. 
+![acc](images/training_accuracy.png)
+![loss](images/training_loss.png)
+Dengan menggunakan model deep learning, diperoleh akurasi pada training set sebesar 0.96 dan loss 0.1. 
+
+
+Berdasarkan perolehan tersebut, dapat disimpulkan bahwa model tergeneralisasi dengan baik.
 
 ## Referensi
 * Agus Byna, Muhammad Basit, "Penerapan Metode Adaboost Untuk Mengoptimasi Prediksi Penyakit Stroke Dengan Algoritma Naïve Bayes", vol 9, No 3 (2020)
