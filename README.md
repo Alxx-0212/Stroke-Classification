@@ -53,13 +53,14 @@ Tujuan proyek ini dibuat adalah sebagai berikut :
 | 44679 | Female | 44.0 |       0      |       0       |      Yes     | Govt_job      |      Urban     |       85.28       | 26.2 | Unknown         |    0   |
 
 ## Data Preparation
-1. Encoding: Karena sebagian besar algoritma machine learning dan statistik membutuhkan data dalam bentuk numerik, nilai-nilai categorical value (nilai non-numerik) perlu diubah menjadi angka. Dalam konteks ini, proses encoding dapat berupa penggunaan teknik seperti Label Encoding atau One-Hot Encoding.
-2. Min Max Normalization: Proses normalisasi ini bertujuan untuk membawa semua atribut dalam skala yang seragam, biasanya dalam rentang [0, 1]. Metode Min Max Normalization mengubah nilai setiap atribut dengan formula: <br/>
+#### Encoding
+Karena sebagian besar algoritma machine learning dan statistik membutuhkan data dalam bentuk numerik, nilai-nilai categorical value (nilai non-numerik) perlu diubah menjadi angka. Dalam konteks ini, proses encoding dapat berupa penggunaan teknik seperti Label Encoding atau One-Hot Encoding.
+#### Min Max Normalization
+Proses normalisasi ini bertujuan untuk membawa semua atribut dalam skala yang seragam, biasanya dalam rentang [0, 1]. Metode Min Max Normalization mengubah nilai setiap atribut dengan formula: <br/>
 ${X_{normalized} = {(X - X_{min}) \over (X_{max} - X_{min})}}$ <br/>
 Dimana X adalah nilai asli, X_min adalah nilai minimum dari atribut tersebut, dan X_max adalah nilai maksimum dari atribut tersebut. Normalisasi ini membantu mempercepat proses komputasi dan mencegah atribut dengan skala besar mendominasi perhitungan.
-4. Pembagian Dataset: Dataset kemudian dibagi menjadi dua bagian, yaitu train set dan test set. Train set digunakan untuk melatih model machine learning, sedangkan test set digunakan untuk menguji sejauh mana model yang telah dilatih dapat melakukan prediksi dengan akurasi yang baik.
-
-Semua langkah ini membantu memastikan bahwa data yang digunakan untuk melatih model adalah data yang berkualitas dan siap digunakan dalam proses machine learning.
+#### Split Dataset
+Dataset kemudian dibagi menjadi dua bagian, yaitu train set dan test set dengan rasio (80/20). Train set digunakan untuk melatih model machine learning, sedangkan test set digunakan untuk menguji sejauh mana model yang telah dilatih dapat melakukan prediksi dengan akurasi yang baik. Semua langkah ini membantu memastikan bahwa data yang digunakan untuk melatih model adalah data yang berkualitas dan siap digunakan dalam proses machine learning.
 ## Modeling
 Model machine learning dilatih menggunakan framework Tensorflow. Pada prosesnya, dibuat model deep learning sederhana menggunakan 3 layer Dense dengan layer pertama terdiri dari 16 neuron dan *input_shape* pada input layer adalah 20, layer kedua terdiri dari 20 neuron dengan aktivasi relu, dan output layer terdapat 1 neuron dengan fungsi aktivasi *sigmoid* untuk memprediksi apakah stroke atau tidak. Model kemudian dicompile menggunakan *SGD optimizer* dengan *learning_rate* 0.1 dan *binary_crossentropy loss function*. Model kemudian dilatih dengan 100 *epochs* dan *batch_size* 32 dan memperoleh akurasi pada training set sebesar 0.96 . 
 
