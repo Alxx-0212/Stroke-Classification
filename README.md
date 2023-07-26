@@ -116,6 +116,7 @@ Dengan menggunakan model deep learning, diperoleh akurasi pada training set sebe
 | test_accuracy | test_loss |
 |:------------:|:--------:|
 |    0.9717    |  0.1207  |
+<br/>
 Hasil evaluasi model menggunakan test set, diperoleh akurasi sebesar 0.97 dan loss sebesar 0.12. Berdasarkan perolehan tersebut, dapat disimpulkan bahwa model tergeneralisasi dengan baik.
 
 ## Referensi
